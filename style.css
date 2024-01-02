@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    font-family: "roboto", sans-serif;
+    background-color: #E9E9E9;
+}
+
+.box {
+    margin: 50px 50px;
+    border-radius: 30px;
+    background-color: #FAFAFA;
+}
+
+img {
+    height: 30px;
+    width: 30px; 
+    cursor: pointer;
+}
+
+.main {
+    float: left;
+    width: 75%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 50px 40px 0;
+}
+
+input {
+    border: none;
+    height: 25px;
+    background-color: transparent;
+    margin-right: 35%;
+    font-family: "Roboto";
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 20px;
+    padding: 8px;
+    outline: none;
+}
+
+#date {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    font-size: larger;
+    font-weight: 500;
+    padding-top: 12px;
+    font-family: "Poppins";
+    cursor: pointer;
+}
+
+#temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#number {
+    font-weight:500;
+    font-size: 200px;  
+    color: #696969;
+}
+
+#degree {
+    font-weight:900;
+    font-size: 125px; 
+    align-items: flex-start;
+    color: #696969;
+    max-height: 120px;
+    padding-bottom: 100px;
+}
+
+#climate {  
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: xx-large;
+    color: #696969;
+    font-size: 50px;
+    font-family: "Poppins";
+}
+
+.icons {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#elements {
+    color: #696969;
+    font-weight: 500;
+    font-size: larger;
+    display: flex;
+}
+
+#days {
+    display: flex;
+    margin: 100px 200px;
+    gap: 16px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E8E8E8;
+    border-radius: 15px;
+    gap: 15px;
+    padding: 25px 20px;
+    cursor: pointer;
+    min-width: 60px;
+}
+
+[id^="week"], #country{
+    font-weight:500;
+    color: #000;
+    font-size: medium;
+    text-align: center;
+
+}
+
+[id^="degrees"], [id^="degreesHourly"], #countryName{
+    font-size: xx-large;
+    align-items: center;
+    color: #696969;
+    text-align: center;
+    margin-left: 10px;
+}
+
+[id^="climates"]{
+    color: #B8B8B8;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F6F6F6;
+    gap: 25px;
+    width: 25%;
+    border-radius: 0 20px 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+#good, #time {
+    font-weight: 500;
+    font-family: "Poppins";
+    font-size: 30px;
+}
+
+#sameTemp {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#mini {
+    margin: 10px 0px 10px 10px;
+}
+
+#thermalSensation {
+    color: #696969;
+    font-weight: 500;
+    margin-top: -18px;
+    font-family: "Poppins";
+}
+
+#windRight {
+    display: flex;
+}
+
+#humidityRight {
+    display: flex;
+    align-items: center;
+}
+
+#climateRight {
+    color: #696969;
+    font-size:x-large;
+    margin-top: -14px;
+    font-family: "Poppins";
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: "Poppins";
+}
+
+.hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width:1460px) {
+    .info {
+        width: 30%;
+    }
+
+    .main {
+        width: 70%
+    }
+
+    #days {
+    margin: 100px 120px;
+    }
+
+
+}
+
+@media (max-width:1310px) {
+    #days{
+    margin: 100px 95px;
+}
+    .box {
+        margin: 25px 25px;
+    }
+}
+
+@media (max-width:1200px) {
+    .box {
+        margin: 25px 25px;
+    }
+
+    #days {
+        margin: 100px 40px;
+    }
+
+    .main {
+        width: 70%;
+    }
+
+    .info {
+        width: 30%;
+    }
+
+    .hours {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #days {
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-rows: 160px 160px;
+        gap: 10px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+    }
+
+    .info {
+        width: 40%;
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    #climate {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .info {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 762px) {
+    #temp{
+    margin-left: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .box{
+    margin: 10px;
+    border-radius: 10px;
+    }
+
+    #dregree {
+        font-size: 100px;
+    }
+
+    #number {
+        font-size: 120px;
+    }
+
+    #temp {
+        margin-left: 180px;
+    }
+
+    #date {
+        /*margin-left: 60px;*/
+    }
+
+    #temp {
+        margin: 0;
+    }
+}
+@media (max-width:490px) {
+    #date {
+        margin-left: -60px;
+    }
+}
+@media (max-width: 390px) {
+    #days {
+        gap: 13px;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+    input {
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 360px) {
+    .box {
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    #days {
+        grid-template-columns: 1fr;
+    }
+
+    .hours {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #degree {
+        font-size: 70px;
+    }
+
+    header {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    input {
+        margin-left: 183px;
+    }
+
+    #climate {
+        right: 210px;
+        margin-bottom: 20px;
+        
+    }
+
+    #temp {
+        margin: 0;
+    }
+
+    #date {
+        margin-left: 40px;
+    }
+}
+
+
+
+
